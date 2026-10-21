@@ -1,20 +1,72 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hỗ trợ — Sổ Tay Đơn Hàng</title><style>
-:root{--brand:#12327A;--fill:#2F6BFF;--text:#1b1b1f;--muted:#55555f;--bg:#ffffff;--card:#f1f5ff}
-@media (prefers-color-scheme:dark){:root{--brand:#7FA8FF;--fill:#2F6BFF;--text:#f2f2f5;--muted:#b4b4bf;--bg:#111114;--card:#1b1f2b}}
-*{box-sizing:border-box}body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}
-main{max-width:720px;margin:0 auto;padding:32px 20px 64px}h1{color:var(--brand);font-size:34px;margin:0 0 4px}h2{color:var(--brand);margin-top:36px}
-p,li{color:var(--text)}.muted{color:var(--muted)}nav a,a{color:var(--brand)}nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
-section.card{background:var(--card);border-radius:16px;padding:18px 20px;margin:16px 0}footer{margin-top:48px;color:var(--muted);font-size:14px}
-</style></head>
-<body><main><nav><a href="./">Sổ Tay Đơn Hàng</a><a href="support.html">Hỗ trợ · Support</a><a href="privacy.html">Quyền riêng tư · Privacy</a><a href="terms.html">Điều khoản · Terms</a></nav>
-<h1>Hỗ trợ</h1><p class="muted">Support</p>
-<section class="card"><p>Cần giúp, báo lỗi hay góp ý: viết cho <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>. Vui lòng ghi phiên bản ứng dụng (Thiết lập → Giới thiệu).</p>
-<p class="muted">For help, bug reports or ideas, email <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>.</p></section>
-<h2>Câu hỏi thường gặp</h2>
-<p><strong>Xem thử không cần nhập gì?</strong> Ở màn đầu tiên bấm "Xem thử với dữ liệu mẫu". Xoá bằng Thiết lập → Xoá toàn bộ sổ.</p>
-<p><strong>Tiệm gọi hai lần trong ngày?</strong> Chọn lại tiệm đó và ghi tiếp — sổ cộng vào đúng đơn cũ, từng lần gọi vẫn được giữ riêng.</p>
-<p><strong>Đã chốt rồi mà tiệm gọi thêm?</strong> Sổ hỏi: bổ sung vào chuyến hôm nay, hay ghi cho chuyến ngày mai.</p>
-<p><strong>Đổi máy thì sao?</strong> Thiết lập → Xuất sổ, chuyển tệp sang máy mới, rồi Thiết lập → Nhập sổ.</p>
-<p><strong>Không bật thông báo có sao không?</strong> Không. Mọi chức năng vẫn chạy; chỉ không có lời nhắc giờ chốt.</p>
-<footer>© 2026 Dương Long Hồ · Sổ Tay Đơn Hàng — ứng dụng số 013 của APP_FACTORY_X</footer></main></body></html>
+<html lang="vi">
+<!-- Sinh từ 05_PUBLISHING/07_store_package/templates/website/support.html.tpl. Sửa PUBLISHING/_source/ rồi chạy render_package.py.
+     Trang này là Support URL nộp cho Apple: Apple yêu cầu nó dẫn tới thông tin liên hệ thật. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Hỗ trợ — Sổ Tay Đặt Hàng</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/icon.png">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36">Sổ Tay Đặt Hàng</a>
+  <nav>
+    <a href="privacy.html">Quyền riêng tư</a>
+    <a href="terms.html">Điều khoản</a>
+  </nav>
+</header>
+<main>
+  <h1>Hỗ trợ</h1>
+  <p class="updated">Cập nhật lần cuối: 21/10/2026</p>
+
+  <div class="summary">
+    <p><strong>Liên hệ:</strong> <a href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a></p>
+    <p>Sổ Tay Đặt Hàng do một người làm. Mình đọc mọi thư và thường trả lời trong vòng 7 ngày.
+      Khi báo lỗi, hãy ghi đời iPhone, phiên bản iOS và các bước để thấy lỗi. Đừng gửi kèm dữ liệu sổ của bạn
+      nếu không cần.</p>
+    <p lang="en"><strong>English:</strong> write to the same address; replies usually come within 7 days.</p>
+  </div>
+
+  <h2>Hỏi đáp</h2>
+  <details>
+    <summary>Xem thử không cần nhập gì?</summary>
+    <p>Ở màn đầu tiên chạm <strong>Xem thử với dữ liệu mẫu</strong>. Xoá bằng Thiết lập → Xoá toàn bộ sổ.</p>
+  </details>
+  <details>
+    <summary>Tiệm gọi hai lần trong ngày?</summary>
+    <p>Chọn lại tiệm đó và ghi tiếp — sổ cộng vào đúng đơn cũ, từng lần gọi vẫn được giữ riêng.</p>
+  </details>
+  <details>
+    <summary>Đã chốt rồi mà tiệm gọi thêm?</summary>
+    <p>Sổ hỏi: bổ sung vào chuyến hôm nay, hay ghi cho chuyến ngày mai.</p>
+  </details>
+  <details>
+    <summary>Tới giờ chốt sổ có tự chốt không?</summary>
+    <p>Không. Giờ chốt chỉ để đếm ngược và nhắc (nếu bạn bật). Chuyến chỉ chốt khi bạn chạm <strong>Chốt đơn</strong>.</p>
+  </details>
+  <details>
+    <summary>Dán tin nhắn thì sổ đọc được những gì?</summary>
+    <p>Mỗi món một dòng hoặc cách nhau bằng dấu phẩy, ví dụ "bia lon 5 thùng, mì gói 3". Tên món phải có trong Danh bạ → Mặt hàng (gõ không dấu cũng được). Số viết bằng chữ ("hai thùng") chưa đọc được. Sổ chỉ điền vào đơn; bạn kiểm lại rồi mới bấm Lưu.</p>
+  </details>
+  <details>
+    <summary>Thế nào là "tiệm quen"?</summary>
+    <p>Tiệm có đơn từ 3 ngày trở lên trong 28 ngày qua. Tiệm đó chưa có đơn hôm nay thì hiện trong thẻ "tiệm quen chưa đặt hôm nay" cho tới khi bạn chốt chuyến.</p>
+  </details>
+  <details>
+    <summary>Đổi máy thì sao?</summary>
+    <p>Thiết lập → Xuất sổ, chuyển tệp sang máy mới, rồi Thiết lập → Nhập sổ.</p>
+  </details>
+  <details>
+    <summary>Không bật thông báo có sao không?</summary>
+    <p>Không. Mọi chức năng vẫn chạy; chỉ không có lời nhắc giờ chốt.</p>
+  </details>
+</main>
+<footer>
+  <p>Cập nhật lần cuối: 21/10/2026 · © 2026 Dương Long Hồ ·
+    <a href="./">Trang chủ</a> · <a href="privacy.html">Quyền riêng tư</a> · <a href="terms.html">Điều khoản</a></p>
+</footer>
+</body>
+</html>
